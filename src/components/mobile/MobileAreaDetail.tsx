@@ -57,7 +57,7 @@ function MobileAreaDetail({
             <div className="flex h-full flex-col items-center justify-center px-6 text-center text-white">
               <img
                 src="/images/ggmmLogo.webp"
-                alt="GGMM - Gestión Gubernamental Municipal"
+                alt="ggmm - Gestión Gubernamental Municipal"
                 width={700}
                 height={303}
                 loading="lazy"

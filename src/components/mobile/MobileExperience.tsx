@@ -10,7 +10,7 @@ import {
 } from "../../data/sections";
 
 import {
-  GGMM_NAVIGATION_EVENT,
+  ggmm_NAVIGATION_EVENT,
   getNavigationTargetFromHash,
   isMobileViewport,
   navigateToArea,
@@ -141,7 +141,7 @@ function MobileExperience() {
     );
 
     window.addEventListener(
-      GGMM_NAVIGATION_EVENT,
+      ggmm_NAVIGATION_EVENT,
       handleInternalNavigation,
     );
 
@@ -157,7 +157,7 @@ function MobileExperience() {
       );
 
       window.removeEventListener(
-        GGMM_NAVIGATION_EVENT,
+        ggmm_NAVIGATION_EVENT,
         handleInternalNavigation,
       );
     };

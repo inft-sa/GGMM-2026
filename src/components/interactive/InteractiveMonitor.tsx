@@ -11,7 +11,7 @@ import {
 } from "../../data/sections";
 
 import {
-  GGMM_NAVIGATION_EVENT,
+  ggmm_NAVIGATION_EVENT,
   getNavigationTargetFromHash,
   isDesktopViewport,
   navigateToArea,
@@ -160,7 +160,7 @@ function InteractiveMonitor() {
     );
 
     window.addEventListener(
-      GGMM_NAVIGATION_EVENT,
+      ggmm_NAVIGATION_EVENT,
       handleInternalNavigation,
     );
 
@@ -176,7 +176,7 @@ function InteractiveMonitor() {
       );
 
       window.removeEventListener(
-        GGMM_NAVIGATION_EVENT,
+        ggmm_NAVIGATION_EVENT,
         handleInternalNavigation,
       );
     };
@@ -324,7 +324,7 @@ function InteractiveMonitor() {
     <section
       id="inicio"
       className="scroll-mt-20 bg-[#d9d3ca]"
-      aria-label="Plataforma GGMM"
+      aria-label="Plataforma ggmm"
     >
       <OfficeScene
         monitor={monitor}

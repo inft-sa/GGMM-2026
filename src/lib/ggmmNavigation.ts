@@ -83,7 +83,7 @@ const areaIdByHash =
     ]),
   ) as Record<string, ModuleId>;
 
-export const GGMM_NAVIGATION_EVENT =
+export const ggmm_NAVIGATION_EVENT =
   "ggmm:navigation";
 
 export function getNavigationTargetFromHash(
@@ -202,7 +202,7 @@ export function setNavigationHash(
    */
   window.dispatchEvent(
     new Event(
-      GGMM_NAVIGATION_EVENT,
+      ggmm_NAVIGATION_EVENT,
     ),
   );
 }

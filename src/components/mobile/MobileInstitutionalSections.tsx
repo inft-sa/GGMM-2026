@@ -9,7 +9,7 @@ import {
 } from "react";
 
 import {
-  GGMM_NAVIGATION_EVENT,
+  ggmm_NAVIGATION_EVENT,
   getNavigationTargetFromHash,
   isMobileViewport,
   navigateToSection,
@@ -127,7 +127,7 @@ function MobileInstitutionalSections({
     );
 
     window.addEventListener(
-      GGMM_NAVIGATION_EVENT,
+      ggmm_NAVIGATION_EVENT,
       handleInternalNavigation,
     );
 
@@ -143,7 +143,7 @@ function MobileInstitutionalSections({
       );
 
       window.removeEventListener(
-        GGMM_NAVIGATION_EVENT,
+        ggmm_NAVIGATION_EVENT,
         handleInternalNavigation,
       );
     };

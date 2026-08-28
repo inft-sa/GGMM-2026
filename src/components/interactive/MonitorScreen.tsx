@@ -517,7 +517,7 @@ function ExperienceScreen({
       <div className="relative min-h-0 min-w-0 overflow-hidden bg-white">
         <img
           src="/images/brochure/experiencia-latinoamerica.webp"
-          alt="Mapa de experiencia de GGMM en Latinoamérica"
+          alt="Mapa de experiencia de ggmm en Latinoamérica"
           width={1450}
           height={1670}
           loading="lazy"
@@ -577,7 +577,7 @@ function AlliancesScreen({
       <div className="relative flex min-h-0 min-w-0 items-center justify-center overflow-hidden bg-white p-8">
         <img
           src="/images/brochure/alianzas-internacionales.webp"
-          alt="Alianzas internacionales de GGMM"
+          alt="Alianzas internacionales de ggmm"
           width={1220}
           height={870}
           loading="lazy"
@@ -636,7 +636,7 @@ function AreasIntro() {
       <div className="relative min-h-0 min-w-0 overflow-hidden bg-[#ebe4d9]">
         <img
           src="/images/brochure/areas-overview.webp"
-          alt="Áreas y módulos disponibles en GGMM"
+          alt="Áreas y módulos disponibles en ggmm"
           width={740}
           height={493}
           loading="lazy"
@@ -746,7 +746,7 @@ function SectionVisual({
       <div className="relative z-10 flex flex-col items-center text-center">
         <img
           src="/images/ggmmLogo.webp"
-          alt="GGMM - Gestión Gubernamental Municipal"
+          alt="ggmm - Gestión Gubernamental Municipal"
           width={700}
           height={303}
           loading="eager"

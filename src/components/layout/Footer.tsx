@@ -37,7 +37,7 @@ function Footer() {
           <div>
             <img
               src="/images/ggmmLogo.webp"
-              alt="GGMM - Gestión Gubernamental Municipal"
+              alt="ggmm - Gestión Gubernamental Municipal"
               width={700}
               height={303}
               className="h-8 w-auto object-contain brightness-0 invert"
@@ -121,11 +121,11 @@ function Footer() {
           </nav>
 
           {/* =====================================
-              ÁREAS GGMM
+              ÁREAS ggmm
           ====================================== */}
 
           <nav
-            aria-label="Áreas de gestión GGMM"
+            aria-label="Áreas de gestión ggmm"
           >
             <FooterTitle>
               Áreas de gestión
@@ -217,7 +217,7 @@ function Footer() {
 
         <div className="mt-6 flex flex-col gap-3 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-white/40">
-            © {year} GGMM · INFT S.A.
+            © {year} ggmm · INFT S.A.
             Todos los derechos reservados.
           </p>
 

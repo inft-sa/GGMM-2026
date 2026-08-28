@@ -15,7 +15,7 @@ function Header() {
         >
           <img
             src="/images/ggmmLogo.webp"
-            alt="GGMM - Gestión Gubernamental Municipal"
+            alt="ggmm - Gestión Gubernamental Municipal"
             width={700}
             height={303}
             loading="eager"

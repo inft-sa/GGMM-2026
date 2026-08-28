@@ -16,10 +16,10 @@ function StructuredData() {
       `${SITE_URL}/#areas-list`,
 
     name:
-      "Áreas y módulos de GGMM",
+      "Áreas y módulos de ggmm",
 
     description:
-      "Áreas de gestión disponibles dentro de la plataforma GGMM para gobiernos municipales.",
+      "Áreas de gestión disponibles dentro de la plataforma ggmm para gobiernos municipales.",
 
     numberOfItems:
       areas.length,

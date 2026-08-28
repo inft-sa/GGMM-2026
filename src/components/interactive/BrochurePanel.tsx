@@ -875,7 +875,7 @@ function AlliancesBrochure({
             </SectionLabel>
 
             <p className="mt-3 text-[9px] leading-5 text-[#74685f]">
-              La experiencia internacional de GGMM
+              La experiencia internacional de ggmm
               también se ha desarrollado mediante
               alianzas estratégicas con empresas
               locales.
@@ -1107,7 +1107,7 @@ function BrochureFooter() {
         <div>
           <img
             src="/images/ggmmLogo.webp"
-            alt="GGMM - Gestión Gubernamental Municipal"
+            alt="ggmm - Gestión Gubernamental Municipal"
             width={700}
             height={303}
             decoding="async"
