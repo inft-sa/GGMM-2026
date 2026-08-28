@@ -325,7 +325,6 @@ ${message}
       style="
         font-size:12px;
         font-weight:bold;
-        text-transform:uppercase;
         letter-spacing:2px;
         color:#e8c7ce;
       "

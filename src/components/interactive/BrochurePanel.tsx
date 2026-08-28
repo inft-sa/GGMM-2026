@@ -843,7 +843,7 @@ function AlliancesBrochure({
           <Handshake size={24} />
 
           <div>
-            <p className="text-[8px] font-black uppercase tracking-[0.2em] text-white/50">
+            <p className="text-[8px] font-black tracking-[0.2em] text-white/50">
               22 · ggmm
             </p>
 
