@@ -74,8 +74,8 @@ function Contact() {
             {/* Sólo desktop */}
 
             <div className="mt-10 hidden rounded-3xl border border-[#ded3c3] bg-white/65 p-6 shadow-sm lg:block">
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#8d1430]">
-                Plataforma ggmm
+              <p className="text-xs font-black  tracking-[0.18em] text-[#8d1430]">
+                PLATAFORMA ggmm
               </p>
 
               <p className="mt-3 font-serif text-2xl font-bold text-[#211a18]">

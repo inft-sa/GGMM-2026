@@ -506,8 +506,8 @@ function CharacteristicsBrochure({
           />
 
           <div className="ml-4">
-            <p className="text-[8px] font-black uppercase tracking-[0.22em] text-white/50">
-              Plataforma ggmm
+            <p className="text-[8px] font-black tracking-[0.22em] text-white/50">
+              PLATAFORMA ggmm
             </p>
 
             <p className="mt-1 font-serif text-xl font-bold">
@@ -1043,7 +1043,7 @@ function BrochureHeading({
         )}
 
         <div>
-          <p className="text-[8px] font-black uppercase tracking-[0.2em] text-[#8d1430]">
+          <p className="text-[8px] font-black tracking-[0.2em] text-[#8d1430]">
             ggmm
           </p>
 
