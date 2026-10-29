@@ -517,7 +517,7 @@ function ExperienceScreen({
       <div className="relative min-h-0 min-w-0 overflow-hidden bg-white">
         <img
           src="/images/brochure/experiencia-latinoamerica.webp"
-          alt="Mapa de experiencia de ggmm en Latinoamérica"
+          alt="Mapa de experiencia de GGMM en Latinoamérica"
           width={1450}
           height={1670}
           loading="lazy"
@@ -577,7 +577,7 @@ function AlliancesScreen({
       <div className="relative flex min-h-0 min-w-0 items-center justify-center overflow-hidden bg-white p-8">
         <img
           src="/images/brochure/alianzas-internacionales.webp"
-          alt="Alianzas internacionales de ggmm"
+          alt="Alianzas internacionales de GGMM"
           width={1220}
           height={870}
           loading="lazy"
@@ -636,7 +636,7 @@ function AreasIntro() {
       <div className="relative min-h-0 min-w-0 overflow-hidden bg-[#ebe4d9]">
         <img
           src="/images/brochure/areas-overview.webp"
-          alt="Áreas y módulos disponibles en ggmm"
+          alt="Áreas y módulos disponibles en GGMM"
           width={740}
           height={493}
           loading="lazy"
@@ -746,7 +746,7 @@ function SectionVisual({
       <div className="relative z-10 flex flex-col items-center text-center">
         <img
           src="/images/ggmmLogo.webp"
-          alt="ggmm - Gestión Gubernamental Municipal"
+          alt="GGMM - Gestión Gubernamental Municipal"
           width={700}
           height={303}
           loading="eager"
@@ -788,10 +788,22 @@ function AreaScreen({
   const titleIsMedium =
     area.title.length > 24;
 
+  const hasManyModules =
+    area.modules.length > 6;
+
+  const visibleModules =
+    area.id ===
+    "administracionFinanciera"
+      ? area.modules
+      : area.modules.slice(
+          0,
+          6,
+        );
+
   return (
     <div className="grid h-full min-h-0 grid-cols-[0.98fr_1.02fr]">
       <div className="flex min-h-0 min-w-0 flex-col justify-center overflow-hidden border-r border-[#ded6ca] px-8 py-6">
-        <p className="shrink-0 text-[10px] font-black uppercase tracking-[0.22em] text-[#8d1430]">
+        <p className="shrink-0 text-[10px] font-black tracking-[0.22em] text-[#8d1430]">
           Área ggmm
         </p>
 
@@ -807,22 +819,43 @@ function AreaScreen({
           {area.title}
         </h1>
 
-        <p className="mt-4 max-w-lg text-[12px] leading-6 text-[#60564f]">
+        <p
+          className={`max-w-lg text-[#60564f] ${
+            hasManyModules
+              ? "mt-3 text-[11px] leading-5"
+              : "mt-4 text-[12px] leading-6"
+          }`}
+        >
           {area.description}
         </p>
 
-        <div className="mt-4">
+        <div
+          className={
+            hasManyModules
+              ? "mt-3"
+              : "mt-4"
+          }
+        >
           <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#8d1430]">
             Módulos
           </p>
 
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            {area.modules
-              .slice(0, 6)
-              .map((module) => (
+          <div
+            className={`mt-2 flex flex-wrap ${
+              hasManyModules
+                ? "gap-1"
+                : "gap-1.5"
+            }`}
+          >
+            {visibleModules.map(
+              (module) => (
                 <span
                   key={module}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-[#ddd1c2] bg-white/65 px-3 py-1.5 text-[9px] font-semibold text-[#5b5049]"
+                  className={`inline-flex items-center rounded-full border border-[#ddd1c2] bg-white/65 font-semibold text-[#5b5049] ${
+                    hasManyModules
+                      ? "gap-1 px-2 py-1 text-[8px]"
+                      : "gap-1.5 px-3 py-1.5 text-[9px]"
+                  }`}
                 >
                   <Layers3
                     size={10}
@@ -831,7 +864,8 @@ function AreaScreen({
 
                   {module}
                 </span>
-              ))}
+              ),
+            )}
           </div>
         </div>
 

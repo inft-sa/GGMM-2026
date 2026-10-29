@@ -626,7 +626,7 @@ export const areas: Module[] = [
     ],
   },
 
-  /* ---------------------------------------------------------
+    /* ---------------------------------------------------------
      ADMINISTRACIÓN FINANCIERA
      --------------------------------------------------------- */
 
@@ -637,10 +637,10 @@ export const areas: Module[] = [
     title: "Administración Financiera",
 
     shortDescription:
-      "Tesorería, bancos, compras y patrimonio.",
+      "Tesorería, bancos, compras, patrimonio y gestión digital.",
 
     description:
-      "Área compuesta por módulos para la administración de Tesorería, Caja chica, Fondo fijo, Bancos, Compras y Patrimonio.",
+      "Área compuesta por módulos para la administración de Tesorería, Caja chica, Fondo fijo, Bancos, Compras y Patrimonio, incorporando además soluciones de Digitalización de Expedientes y firmas, Reclamos y Turnos.",
 
     image:
       "/images/brochure/administracion-financiera.webp",
@@ -655,6 +655,9 @@ export const areas: Module[] = [
       "Bancos",
       "Compras",
       "Patrimonio",
+      "Digitalización de Expedientes y firmas",
+      "Reclamos",
+      "Turnos",
     ],
 
     benefits: [
@@ -678,6 +681,9 @@ export const areas: Module[] = [
       "Bancos",
       "Compras",
       "Patrimonio",
+      "Digitalización de Expedientes y firmas",
+      "Reclamos",
+      "Turnos",
     ],
 
     impacts: [
@@ -686,6 +692,7 @@ export const areas: Module[] = [
       "Controlar las finanzas municipales.",
     ],
   },
+
 
   /* ---------------------------------------------------------
      ADMINISTRACIÓN CONTABLE

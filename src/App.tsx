@@ -1,3 +1,4 @@
+import MunicipalPaperlessNews from "./components/news/MunicipalPaperlessNews";
 import ResponsiveExperience from "./components/responsive/ResponsiveExperience";
 import StructuredData from "./components/seo/StructuredData";
 
@@ -7,6 +8,8 @@ function App() {
       <StructuredData />
 
       <ResponsiveExperience />
+
+      <MunicipalPaperlessNews />
     </>
   );
 }
